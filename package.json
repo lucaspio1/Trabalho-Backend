@@ -1,0 +1,25 @@
+{
+  "name": "backend-operadora",
+  "version": "1.0.0",
+  "description": "Sistema backend para operadoras de internet",
+  "main": "src/infrastructure/server.js",
+  "scripts": {
+    "start": "node src/infrastructure/server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sequelize": "^6.31.0",
+    "mysql2": "^3.6.0",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "jest": "^29.6.3",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": ["./tests/setup.js"],
+    "testTimeout": 10000
+  }
+}
